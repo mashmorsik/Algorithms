@@ -1,0 +1,8 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/mashmorsik/Algorithms/CodeWars/6kyu/FindOutlier
+BenchmarkFindOutlier-8         	65962578	        93.11 ns/op	     128 B/op	       5 allocs/op
+BenchmarkFindOutlierFast-8     	121102256	        49.47 ns/op	      32 B/op	       3 allocs/op
+BenchmarkFindOutlierFaster-8   	1000000000	         2.830 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/mashmorsik/Algorithms/CodeWars/6kyu/FindOutlier	25.297s
