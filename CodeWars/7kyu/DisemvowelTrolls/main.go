@@ -7,6 +7,7 @@ import (
 
 func main() {
 	fmt.Println(Disemvowel("This is trolling"))
+
 }
 
 func Disemvowel(comment string) string {

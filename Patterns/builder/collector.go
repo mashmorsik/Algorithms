@@ -12,7 +12,7 @@ type FilmBuilderI interface {
 	SetYear(year int) FilmBuilderI
 	SetIsSeries(isSeries bool) FilmBuilderI
 	SetActors(actors []string) FilmBuilderI
-	GetFilm() Film
+	BuildFilm() Film
 }
 
 type FilmBuilder struct {
@@ -46,7 +46,7 @@ func (f FilmBuilder) SetActors(actors []string) FilmBuilderI {
 	return f
 }
 
-func (f FilmBuilder) GetFilm() Film {
+func (f FilmBuilder) BuildFilm() Film {
 	return Film{
 		Studio:   f.Studio,
 		Year:     f.Year,
